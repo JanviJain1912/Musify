@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>Cv4fun</title>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/index.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+        <!-- Bootstrap Scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    
+    </head>
+    <body">
+
+      <%if (status == "loggedIn"){%>
+            
+
+              <header class="main-head">
+                <nav class="main-nav">
+        
+        
+                    <li><a href="/"> Home</a></li>
+                    <li><a href="/library"> Music Library</a></li>
+                    <li><a href="/about"> About</a></li>
+                    <li><a href="" target="_blank"><button class="btn-header" onclick="alert('Website is under maintenance')">Payment Gatway for subsription</button></a><br><br></li>
+
+        
+        
+        
+        
+                </nav>
+        
+                <h1>The Musify <i class="fa fa-headphones" aria-hidden="true"></i></h1>
+                <h3 style="padding-top: 10px;">Welcome to Musify, where music meets innovation! <i class="fa fa-music" aria-hidden="true"></i></h3>
+                <div >
+                  <fieldset>
+                    <button class="button-link" type="submit" id="form-submit-google" class="button">
+                      <a class="link" href="/logout"><i class="fa fa-arrow-left" aria-hidden="true"></i> LogOut</a></button>
+                  </fieldset>
+                </div>
+                
+                <!-- <button class="btn">&#9658;</button> -->
+            </header>
+            <section class="content-section container">
+                <h2 style="padding-top: 20px;">Playlist</h2>
+                <div>
+                    <div class="playlist-row" style="padding-top: 10px;">
+                        <span class="playlist-number">1 </span>
+                        <span class="playlist-item">Insane</span>
+                        <span class="playlist-arena">Ap Dhillon</span>
+                        <button id="btn1" class="btn-play">&#9658;</button>
+                        <audio id="insane" src="/music/Insane - AP Dhillon.mp3"></audio>
+        
+                    </div>
+                    <div class="playlist-row">
+                        <span class="playlist-number">2</span>
+                        <span class="playlist-item">Blue Eyes</span>
+                        <span class="playlist-arena">Honey Singh</span>
+                        <button id="btn2" class="btn-play">&#9658;</button>
+                        <audio id="blueEyes" src="/music/Blue Eyes - Yo Yo Honey Singh (PagalWorld.com).mp3"></audio>
+        
+                    </div>
+                    <div class="playlist-row">
+                        <span class="playlist-number">3</span>
+                        <span class="playlist-item">Let Me Down Slowly</span>
+                        <span class="playlist-arena">Alec Benjamin</span>
+                        <button id="btn3" class="btn-play">&#9658;</button>
+        
+                    </div>
+                    <div class="playlist-row">
+                        <span class="playlist-number">4</span>
+                        <span class="playlist-item">Fed Up</span>
+                        <span class="playlist-arena">Bazanji</span>
+                        <button id="btn4" class="btn-play">&#9658;</button>
+        
+                    </div>
+                    <div class="playlist-row">
+                        <span class="playlist-number">5</span>
+                        <span class="playlist-item">Age 19</span>
+                        <span class="playlist-arena">Jass manak</span>
+                        <button id="btn5" class="btn-play">&#9658;</button>
+        
+                    </div>
+                    <div class="playlist-row">
+                        <span class="playlist-number">6</span>
+                        <span class="playlist-item">Animals</span>
+                        <span class="playlist-arena">Maroon 5</span>
+                        <button id="btn6" class="btn-play">&#9658;</button>
+        
+                    </div>
+                </div>
+            </section>
+
+            <footer class="main-footer">
+                <div class="container main-footer-container">
+                    <h4>The Musify @JanviJain</h4>
+                    <ul>
+                        <li><a href="http://spotify.com"><img src="/css/spotify.png" alt="" srcset=""></a></li>
+                        <li><a href="http://youtube.com"><img src="/css/yt.png" alt="" srcset=""></a></li>
+                    </ul>
+                </div>
+            </footer>  
+
+      <%}else{%>
+            
+                  <div class="banner_main_image">
+
+                    <div class="container">
+                        <div class="banner-content">
+                          <section>
+                            <i class="fa fa-arrow-circle-down navbar-arrow" aria-hidden="true" onclick="toggleMenu()"></i>
+                            <ul id="menu">
+                              <li><a href="/"><i class="fa fa-h-square" aria-hidden="true"></i> Home</a></li>
+                              <li><a href="/login"><i class="fa fa-arrow-right" aria-hidden="true"></i> Login</a></li>
+                              <li><a href="/signup"><i class="fa fa-user-circle" aria-hidden="true"></i> SignUp</a></li>
+                            </ul>
+                          </section>
+                          <h1 class="banner-heading">MUSIFY !! </h1> 
+                            
+        
+                            <p class="banner-paragraph">Where words fail, music speaks! <i class="fa fa-music" aria-hidden="true"></i></p>
+                            
+                            <img src="https://media0.giphy.com/media/3o7btZ1pMda4to9zR6/source.gif" alt="funny GIF" class="banner-image">
+                            
+                        </div>
+
+                      </div>
+
+                      <div>
+                        <section class="white-section" id="features">
+
+                          <div >
+                      
+                            <div class="row">
+                              <div class="feature-box col-lg-4">
+                                <i class="icon fa fa-music" aria-hidden="true"></i>
+                                <h3 class="feature-title">Endless Playlist</h3>
+                                <p>Explore a vast collection of music from various genres and artists.</p>
+                              </div>
+                      
+                              <div class="feature-box col-lg-4">
+                                <i class="icon fa fa-volume-up" aria-hidden="true"></i>
+                                <h3 class="feature-title">High-Quality Audio</h3>
+                                <p>Enjoy crystal-clear, high-fidelity sound with our premium audio streaming.</p>
+                              </div>
+                      
+                              <div class="feature-box col-lg-4">
+                                <i class="icon fas fa-heart fa-4x"></i>
+                                <h3 class="feature-title">Listen Anywhere.</h3>
+                                <p>Access your favorite tunes on the go - whether you're at home or traveling.</p>
+                              </div>
+          
+                            </div>
+                          
+                          
+                      
+                          </div>
+                          
+                        </section>
+          
+          
+                        <!-- testimonial section -->
+          
+          
+                        <section class="colored-section" id="testimonials">
+          
+                          <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+                            <div class="carousel-inner">
+          
+                              
+                              <div class="carousel-item active container-fluid">
+                                
+                                <h2 class="testimonial-text">Chill Vibes</h2>
+                                <em class="testimonial-para">Unwind and relax with this curated collection of soothing tracks.</em><br/>
+                                <img src="/css/arjit1.jpeg" alt="Discover New Music Image" class="d-block mx-auto mb-4" style="padding-top: 20px;"/>
+                                
+                              </div>
+                              
+          
+                              <div class="carousel-item container-fluid">
+                                <h2 class="testimonial-text">Energetic Beats</h2>
+                                <em class="testimonial-para">Get pumped up with high-energy beats that keep you moving.</em><br/>
+                                <img src="/css/ap.jpeg" alt="Discover New Music Image" class="d-block mx-auto mb-4" style="padding-top: 20px;"/>
+                                
+                              </div>
+                              
+          
+                              <div class="carousel-item container-fluid">
+                                <h2 class="testimonial-text">CREATE YOUR PLAYLIST</h2>
+                                <em class="testimonial-para">Build your own playlists with your favorite tracks and share them with friends.</em><br/>
+                                <img src="/css/neha.jpeg" alt="Discover New Music Image" class="d-block mx-auto mb-4" style="padding-top: 20px;"/>
+                                
+                              </div>
+                              
+          
+                             
+          
+          
+                            </div>
+          
+                            <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+          
+                          </div>
+                      
+                        </section>
+
+                      </div>
+      
+                  
+    <%}%>
+
+      <script src="/js/index.js" charset="utf-8"></script>
+      <script src="/js/internal.js" charset="utf-8"></script>
+        
+    </body>
+</html>

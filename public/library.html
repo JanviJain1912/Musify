@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music | Library</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-head">
+        <nav class="main-nav">
+            
+
+                <li><a href="/"> Home</a></li>
+                <li><a href="/library"> Music Library</a></li>
+                <li><a href="/about"> About</a></li>
+                <li><a href="" target="_blank"><button class="btn-header" onclick="alert('Website is under maintenance')">Payment Gatway for subsription</button></a><br><br></li>
+               
+        </nav>
+        
+        <h1>The Musify <i class="fa fa-headphones" aria-hidden="true"></i></h1>
+        <h3 style="padding-top: 10px;">Welcome to Musify, where music meets innovation! <i class="fa fa-music" aria-hidden="true"></i></h3>
+         
+    </header>
+    <section class="content-section container">
+        <div class="shop-items">
+            <div class="shop-item">
+                <div><span class="shop-item-title">Yo Yo Honey Singh</span></div>
+                <img class="shop-item-image" src="css/villagers.jpg" alt="" srcset="" ">
+                <div class="shop-item-details"><span class="shop-item-price">Rape</span><button class="btn-store shop-item-buy" onclick="alert('Website is under maintenance')">View more</button></div>
+            </div>
+            <div class="shop-item">
+                <div><span class="shop-item-title">Badshah</span></div>
+                <img class="shop-item-image" src="css/one.jpg" alt="" srcset="" ">
+                <div class="shop-item-details"><span class="shop-item-price">Hip-Hop</span><button class="btn-store shop-item-buy" onclick="alert('Website is under maintenance')">View more</button></div>
+            </div>
+            <div class="shop-item">
+                <div >
+                    <span class="shop-item-title">Alan Walker</span>
+                </div>
+                <img class="shop-item-image" src="css/alan.jpg" alt="">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">English Song</span>
+                    <button class="btn-store shop-item-buy" onclick="alert('Website is under maintenance')">View more</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <div>
+                    <span class="shop-item-title">Marron 5</span>
+                </div>
+                <img class="shop-item-image" src="css/marron.jpg" alt="">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Beat-Song</span>
+                    <button class="btn-store shop-item-buy" onclick="alert('Website is under maintenance')">View More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section container" style="padding-top: 50px;">
+        <h2>Personal Playlist</h2>
+        <div class="cart-items">
+            <div class="cart-row">
+                    <span class=" cart-item cart-header cart-column">Items</span>
+                    <span class=" cart-price cart-header cart-column">Zoner</span>
+                    <span class=" cart-quantity cart-header cart-column">Playlist</span>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img src="css/villagers.jpg" class="cart-item-image" alt="">
+                    <span class="cart-item-title">Yo Yo Honey Singh</span>
+                </div>
+                <span class="cart-price cart-column">Hip-Hop</span>
+                <div class="cart-quantity cart-column">
+                    <input type="number" class="cart-input" value="1">
+                    <button type="button" class="btn-danger" onclick="alert('Working on it')">Add</button>
+                </div>
+            </div>
+
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img src="css/alan.jpg" class="cart-item-image" alt="">
+                    <span class="cart-item-title">Alan Walker</span>
+                </div>
+                <span class="cart-price cart-column">English Song</span>
+                <div class="cart-quantity cart-column">
+                    <input type="number" class="cart-input" value="1">
+                    <button type="button" class="btn-danger" onclick="alert('Working on it')">Add</button>
+                </div>
+            </div>
+        </div>   
+                
+        <div class="cart-total">
+            <span class="cart-total-title">Total Song in Playlist</span>
+            <button class="cart-total-purchase" onclick="alert('Under maintenance')">Go to Playlist</button>
+        </div>
+    </section>
+    <footer class="main-footer ">
+        <div class="container main-footer-container">
+        <h4>The Musify @JanviJain</h4>
+        <ul >
+            <li><a href="http://spotify.com"><img src="css/spotify.png" alt="" srcset=""></a></li>
+            <li><a href="http://youtube.com"><img src="css/yt.png" alt="" srcset=""></a></li>
+        </ul>
+        </div>
+    </footer>
+</body>
+</html>
+
